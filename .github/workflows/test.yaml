@@ -21,4 +21,4 @@ jobs:
       - run: uv venv -p 3.12 --seed
       - run: uv pip install .
         continue-on-error: true
-      - run: .venv/bin/pip install .
+      - run: .venv/bin/pip install --use-pep517 .
